@@ -1,4 +1,4 @@
-(import build/circlet :as circlet)
+(import ../build/circlet :as circlet)
 
 # Now build our server
 (circlet/server

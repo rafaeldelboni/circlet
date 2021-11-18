@@ -9,6 +9,7 @@
 (declare-native
   :name "circlet"
   :embedded ["circlet_lib.janet"]
+  :defines {"_XOPEN_SOURCE" 500}
   :lflags (if (= :windows (os/which))
             # for now, assume 32 bit compilation.
             ["advapi32.lib"])
